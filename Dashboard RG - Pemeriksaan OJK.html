@@ -831,11 +831,6 @@ const KEY='rajagadai.ojk.vault.v1';
    mode 'local' = hanya localStorage (perangkat ini saja).
 ═══════════════════════════════════════════════ */
 const CLOUD = {
-  mode: 'cloud',                                          // 'cloud' | 'local'
-  url: 'https://pfohungednwqdekajszw.supabase.co',       // URL project, TANPA /rest/v1/
-  key: 'sb_publishable_eiJY3aUzHltjlDq2Uo_JxQ_UC_DrQin',                     // tempel anon public key di sini
-  table: 'dashboard_state',
-};
 
 async function cloudLoad(){
   if(CLOUD.mode!=='cloud') return null;
