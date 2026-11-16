@@ -830,8 +830,6 @@ const KEY='rajagadai.ojk.vault.v1';
    mode 'cloud' = tersimpan ke Supabase & terlihat semua pengguna.
    mode 'local' = hanya localStorage (perangkat ini saja).
 ═══════════════════════════════════════════════ */
-const CLOUD = {
-
 async function cloudLoad(){
   if(CLOUD.mode!=='cloud') return null;
   try{
